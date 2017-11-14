@@ -1,0 +1,2 @@
+class Manifestation < ApplicationRecord
+end
