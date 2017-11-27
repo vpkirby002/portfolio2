@@ -1,27 +1,47 @@
-#homepage {
+ #homepage {
 	
+	/*background-image: url(https://ww2.kqed.org/quest/wp-content/uploads/sites/39/2012/04/earth-day.jpeg);*/
+	background-color: #fff;
+	position: fixed;
 	margin: 0;
 	padding: 0;
 	font-family: verdana;
-	background-color: #E9B44C;
-	overflow: hidden;
+	/*overflow: hidden;*/
 
 }
 
  #homepage h1 {
-	background-color: #E9B44C;
+	
 	text-align: center;
+	color: white;
 }
+
+
+/*slideshow pictures*/
+
+.numbertext {
+	text-align: center;
+	border-radius: 25px;
+	
+}
+
+
+img {
+	border-radius: 25px;
+}
+
+
 
 .sidebar{ 
 
 	position: fixed;
 	top: 0;
 	left: -250px;
-	background: #262626;
+	background:transparent;
 	width: 250px;
 	height: 100%;
 	transition: .3s;
+	opacity: 0.5;
 
  }
 
@@ -44,7 +64,7 @@
 
  ul li a {
  	padding: 10px 20px;
- 	color: #fff;
+ 	color: #7FD8BE;
  	display: block;
  	text-decoration: none;
  	border-bottom: 1px solid rgba(0,0,0,.2);
@@ -117,7 +137,11 @@
 	transform: rotate(-45deg);
 }
 
-
+/*
+#google_translate {
+	margin: 0 auto;
+}
+*/
 
 
 /*CSS for background video*/
@@ -166,14 +190,10 @@
 
 /*This is the end of the CSS for the background video*/
 
-/*Below is the CSS for the Google Translate*/
 
-
-#google_translate_element {
-	position: absolute;
-	text-align: right;
+#:0.targetLanguage .goog-te-gadget-simple{
+	margin: 0 auto;
 }
-
 
 /*Below is the CSS for the parent resouces page*/	
 
@@ -190,6 +210,61 @@
 	font-size: 20px;
 	text-align: center;
 }
+
+/*Google translate CSS below*/
+
+#google_translate_element {
+	text-align: right;
+	padding-top: 10px;
+}
+
+
+/*CSS for sections on homepage*/
+
+.site {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+
+}
+
+
+.masterhead {
+	height: 500px;
+	width: 100%;
+	background-color: pink;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+
+.books {
+	height: 500px;
+	width:100%;
+	background-color: yellow;
+	padding-bottom: 10px;
+}
+
+
+
+
+
+
+/*Translation CSS*/
+
+
+
+#translator input {
+	height: 1000px;
+	width: 500px;
+}
+
+
+
+
+
+
+
 
 
 

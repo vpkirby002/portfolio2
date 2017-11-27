@@ -2,36 +2,46 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Google Translate</title>
+<head>
+  <title>Google Translate</title>
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-<link rel=" stylesheet" href="style.css" />
+
 
 <link rel="stylesheet" type="text/css" href="css/style.css">
-	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function(){
-			$('.sidebarBtn').click(function(){
-				$('.sidebar').toggleClass('active');
-				$('.sidebarBtn').toggleClass('toggle');
-			})
-		})
-	</script>
+
+
+
 
 	<div id="google_translate_element"></div><script type="text/javascript">
+
+
+
+
 function googleTranslateElementInit() {
   new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
 }
 </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-
+ <script src="https://apis.google.com/js/api.js"></script>
 
 </head>
 
 <body id ="google_translate">
-Google Translate
 
+
+<html>
+
+
+   
+   
+ 
+  
+
+
+    <div id="results"></div>
+  
 
 
 
@@ -45,15 +55,64 @@ Google Translate
 			<li><a href="parent_resources.html">Parent Resources</a></li>
 		</ul>
 		<button class="sidebarBtn">
+
+
 			<span></span>
 		</button>
 
 	</div>
-</html>
+  <br /> <br />
+  <form id="translator">
+    <input name="search" /><input type="submit" value="Translate" />
+  </form>
+<div id="test"></div>
+
+
+
+ <script> 
+
+     
+      // <button type="button" onclick="document.write(5 + 6)">Try it</button>
+
+
+      function start() {
+        // Initializes the client with the API key and the Translate API.
+        gapi.client.init({
+          'apiKey': 'AIzaSyANCWDCvBpsovmJruCnn_1atI-8XzQfEvI',
+          'discoveryDocs': ['https://www.googleapis.com/discovery/v1/apis/translate/v2/rest'],
+        }).then(function() {
+          // Executes an API request, and returns a Promise.
+          // The method name `language.translations.list` comes from the API discovery.
+          return gapi.client.language.translations.list({
+
+         // q: 'hello out there and hows it going. where are you from? please let me know how things are going',
+         q: document.querySelector("input[name=search]").value,
+            source: 'en', 
+            target: 'fr', 
+
+          });
+
+
+
+        }).then(function(response) {
+          document.getElementById("test").innerHTML += response.result.data.translations[0].translatedText;
+        }, function(reason) {
+          console.log('Error: ' + reason.result.error.message);
+        });
+      };
+
+      // Loads the JavaScript client library and invokes `start` afterwards.
+      
+
+      document.getElementById("translator").addEventListener("submit",function(event){
+        event.preventDefault();
+        gapi.load('client', start);
+      });
+    </script>
 
 </body>
 
-
+</html>
 
 
 
