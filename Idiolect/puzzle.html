@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Title of the document</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+<link rel=" stylesheet" href="css/puzzle.css" />
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.sidebarBtn').click(function(){
+				$('.sidebar').toggleClass('active');
+				$('.sidebarBtn').toggleClass('toggle');
+			})
+		})
+	</script>
+
+
+</head>
+
+<body>
+
+
+	<!-- Borrowed from CodePen -->
+<h1> Make a puzzle with a picture of your own!</h1>
+.address
+  input(placeholder = "URL of your picture")
+  .puzzlify Puzzlify
+.puzzle-wrapper
+  .container
+    - for (var i = 1; i <= 5; i++)
+      - for (var k = 1; k <= 5; k++)
+        div(class = "pic pic-" + i + "-" + k)
+          div(class = "inner-pic inner-pic-" + i + "-" + k)
+  .drop-zone
+    - for (var i = 1; i <= 5; i++)
+      - for (var k = 1; k <= 5; k++)
+        div(class = "dz dz-" + i + "-" + k)
+          div(class = "indz indz-" + i + "-" + k)
+</body>
+
+</html>

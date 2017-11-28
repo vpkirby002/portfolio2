@@ -1,17 +1,19 @@
  #homepage {
 	
 	/*background-image: url(https://ww2.kqed.org/quest/wp-content/uploads/sites/39/2012/04/earth-day.jpeg);*/
-	background-color: #fff;
+	font-family: 'Henny Penny', cursive;
+	background-color: #DB7C26;
+	opacity: 0.9;
 	position: fixed;
 	margin: 0;
 	padding: 0;
 	font-family: verdana;
-	/*overflow: hidden;*/
+	
 
 }
 
  #homepage h1 {
-	
+	font-family: 'Henny Penny', cursive;
 	text-align: center;
 	color: white;
 }
@@ -20,6 +22,7 @@
 /*slideshow pictures*/
 
 .numbertext {
+	font-family: 'Henny Penny', cursive;
 	text-align: center;
 	border-radius: 25px;
 	
@@ -33,7 +36,7 @@ img {
 
 
 .sidebar{ 
-
+	font-family: 'Henny Penny', cursive;
 	position: fixed;
 	top: 0;
 	left: -250px;
@@ -53,19 +56,24 @@ img {
 
 
  ul {
+ 	font-family: 'Henny Penny', cursive;
  	margin: 0;
  	padding: 20px 0;
+
  }
 
  ul li {
+ 	font-family: 'Henny Penny', cursive;
  	list-style: none;
 
  }
 
  ul li a {
+ 	font-family: 'Henny Penny', cursive;
+ 	float: left;
  	padding: 10px 20px;
- 	color: #7FD8BE;
- 	display: block;
+ 	color: #D56062;
+ 	display: inline-block;*/
  	text-decoration: none;
  	border-bottom: 1px solid rgba(0,0,0,.2);
 
@@ -214,14 +222,27 @@ img {
 /*Google translate CSS below*/
 
 #google_translate_element {
+	font-family: 'Henny Penny', cursive;
 	text-align: right;
 	padding-top: 10px;
+}
+
+
+h1 {
+	font-family: 'Henny Penny', cursive;
+	text-align: center;
+}
+
+h2 {
+	font-family: 'Henny Penny', cursive;
+	text-align: center;
 }
 
 
 /*CSS for sections on homepage*/
 
 .site {
+	font-family: 'Henny Penny', cursive;
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: 1fr;
@@ -229,42 +250,174 @@ img {
 }
 
 
-.masterhead {
+/*.book_covers {
 	height: 500px;
 	width: 100%;
 	background-color: pink;
 	padding-top: 10px;
 	padding-bottom: 10px;
+}*/
+
+.idiolect_logo {
+	text-align: center;
 }
 
 
-.books {
+
+
+
+/*//CSS for Book preview on homepage*/
+.book_previews {
 	height: 500px;
 	width:100%;
 	background-color: yellow;
 	padding-bottom: 10px;
 }
 
+.masterhead {
+	font-family: 'Henny Penny', cursive;
+	background-color: yellow;
+	height: 700px;
+	width: 50%;
+	border-right: 3px solid white;
+	border-left: 3px solid white;
+	margin: 0px auto;
+}
 
 
+.text {
+	font-family: 'Henny Penny', cursive;
+	padding:30px;
+	color: #333;
+	text-align: center;
+	font-family: Gotham;
+}
+
+.picture img{
+	height: 200px;
+	width: 200px;
+	-webkit-transition: all 1s ease;
+	overflow: hidden;
+	border: 5px solid #FAFF70;
+}
 
 
+.picture .one:hover {
+	height: 300px;
+	width: 300px;
+}
 
+.picture .two:hover{
+	transform: rotate(30deg)
+}
+
+.picture .three:hover{
+	transform: rotate(-30deg)
+}
+
+.picture .four:hover {
+	height: 300px;
+	width: 300px;
+}
+
+.picture .five:hover{
+	transform: rotate(30deg)
+}
+
+.picture .six:hover{
+	transform: rotate(-30deg)
+}
+
+.picture .seven:hover {
+	height: 300px;
+	width: 300px;
+}
+
+.picture .eight:hover{
+	transform: rotate(30deg)
+}
+
+.picture .nine:hover{
+	transform: rotate(-30deg)
+}
+
+
+.frame {
+	float: left;
+	margin: 1px;
+	height: 200px;
+	width:200px;
+	overflow: hidden;
+	border:1 0px solid #FAFF70;
+	-webkit-box-shadow: 5px 5px 5px #FAFF70;
+	box-shadow: 5px 5px 5px #FAFF70;
+
+}
+
+
+/*End of index page /home page book preview CSS*/
 /*Translation CSS*/
 
 
 
 #translator input {
-	height: 1000px;
-	width: 500px;
+	height: 300px;
+	width: 700px;
+	font-family: 'Henny Penny', cursive;
+	text-align: center;
+}
+
+input {
+	font-size: 80px;
+	font-family: 'Henny Penny', cursive;
+	text-align: center;
+
+}
+
+button {
+	background-color: #4CAF50;
+	font-family: 'Henny Penny', cursive;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 40px 20px;
+    cursor: pointer;
+}
+
+#test {
+	font-family: 'Henny Penny', cursive;
+	font-size: 100px;
+
+}
+
+/*main .books_online {
+	height: 200px;
+	width: 200px;
+	background-color: green;
+
+}*/
+
+
+/*#header nav ul li a {
+	display: inline-block;
+}
+*/
+
+
+/*#translation_navbar header nav */
+
+#translation_navbar ul {
+	overflow: hidden;
+	display: inline-block;
 }
 
 
-
-
-
-
-
-
+nav {
+	color: blue;
+}
 
 

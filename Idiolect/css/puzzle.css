@@ -1,0 +1,119 @@
+*, *:before, *:after
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+
+html 
+  overflow: hidden
+
+body
+  background: linear-gradient(45deg, #8B7AAE, #A4447E)
+  height: 100vh
+  width: 100vw
+  padding-top: 1px
+
+h1
+  font-family: Play, sans-serif
+  text-align: center
+  margin-top: 19px
+  color: #fff
+
+.address
+  width: 524px
+  height: 25px
+  margin-top: 30px
+  margin-left: 50%
+  transform: translateX(-50%)
+  font-family: Play, sans-serif
+  
+  input
+    width: 450px
+    height: 100%
+    display: inline-block
+    border-radius: 2px
+    border: 1px solid #8B7AAE
+    outline: none!important
+    padding-left: 2px
+    &:focus 
+      border: 1px solid #A4447E
+
+.puzzlify
+  display: inline-block
+  width: 70px
+  height: 100%
+  background: #2B1657
+  border-radius: 2px
+  cursor: pointer
+  position: relative
+  top: 1px
+  line-height: 25px
+  font-size: 1.1rem
+  text-align: center
+  color: #fff
+  &:hover
+    box-shadow: 0 0 5px #2B1657
+
+.puzzle-wrapper
+  font-size: 0
+  width: 524px
+  margin-left: 50%
+  transform: translateX(-50%)
+  margin-top: 40px
+  position: relative   
+  
+.dz
+  width: 50px
+  height: 50px
+  float: left
+  border: 1px solid #fff
+  background: #ccc
+  opacity: .4
+  overflow: hidden
+  
+.indz
+  width: 250px
+  height: 250px
+  background-image: url("https://kiyutink.github.io/moscow/moscow1.jpg")
+  background-size: cover
+    
+.drop-zone
+  width: 250px
+  height: 250px
+  display: inline-block
+  margin-left: 24px
+  font-size: 1rem
+    
+.container
+  width: 250px
+  height: 250px
+  color: red
+  display: inline-block
+  
+.pic
+  width: 50px
+  height: 50px
+  float: left
+  overflow: hidden
+  border: 1px solid #fff
+  position: absolute
+  z-index: 0  
+  font-size: 1rem
+  
+.inner-pic
+  width: 250px
+  height: 250px
+  background-image: url("https://kiyutink.github.io/moscow/moscow1.jpg")
+  background-size: cover
+  cursor: grab
+
+.grabbed
+  cursor: grabbing
+  
+@for $row from 1 through 5  
+  @for $col from 1 through 5
+    .inner-pic-#{$row}-#{$col}, .indz-#{$row}-#{$col}
+      background-position: (1 - $col) * 50px  (1 - $row) * 50px
+    .pic-#{$row}-#{$col}
+      left: ($col - 1)  * 50px
+      top: ($row - 1) * 50px
+    
