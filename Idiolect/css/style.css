@@ -2,7 +2,7 @@
 	
 	/*background-image: url(https://ww2.kqed.org/quest/wp-content/uploads/sites/39/2012/04/earth-day.jpeg);*/
 	font-family: 'Chicle', cursive;
-	background-image: url("https://www.insidehighered.com/sites/default/server_files/styles/large/public/media/62354870_thumbnail.jpg?itok=dtZXMyvT:");
+	background-image: url("https://bennettfeely.com/gradients/img/gradient.jpg");
 	opacity: 0.9;
 	position: fixed;
 	margin: 0;
@@ -23,15 +23,30 @@
 
 
 #homepage h2 {
-	font-size: 35px;
-	color: black;
+	font-size: 40px;
+	color: #fff;
+	line-height: 50px;
 }
 
+
+h2 {
+	font-size: 300px;
+}
 
 
 
 p {
 	font-size: 25px;
+	color: #DE9827;
+	text-align: center;
+	line-height: 40px;
+}
+
+
+footer {
+	text-align: center;
+	font-size: 25px;
+	padding-bottom: 15px;
 }
 
 /*slideshow pictures*/
@@ -169,57 +184,11 @@ img {
 
 
 #google_translate {
-	background-image: url("https://www.insidehighered.com/sites/default/server_files/styles/large/public/media/62354870_thumbnail.jpg?itok=dtZXMyvT:");
+	background-image: url("https://bennettfeely.com/gradients/img/gradient.jpg");
 	margin: 0 auto;
 }
 
 
-
-/*CSS for background video*/
-
-.homepage-hero-module {
-    border-right: none;
-    border-left: none;
-    position: relative;
-}
-.no-video .video-container video,
-.touch .video-container video {
-    display: none;
-}
-.no-video .video-container .poster,
-.touch .video-container .poster {
-    display: block !important;
-}
-.video-container {
-    position: relative;
-    bottom: 0%;
-    left: 0%;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    background: #000;
-}
-.video-container .poster img {
-    width: 100%;
-    bottom: 0;
-    position: absolute;
-}
-.video-container .filter {
-    z-index: 100;
-    position: absolute;
-    background: rgba(0, 0, 0, 0.4);
-    width: 100%;
-}
-.video-container video {
-    position: absolute;
-    z-index: 0;
-    bottom: 0;
-}
-.video-container video.fillWidth {
-    width: 100%;
-}
-
-/*This is the end of the CSS for the background video*/
 
 
 #:0.targetLanguage .goog-te-gadget-simple{
@@ -264,7 +233,7 @@ h2 {
 	font-family: 'Chicle', cursive;
 	text-align: center;
 	font-size: 30px;
-	color: black;
+	color: #D221A4;
 	line-height: 40px;
 }
 
@@ -273,6 +242,7 @@ h2 {
 
 .site {
 	font-family: 'Chicle', cursive;
+	/*color:#DE9827;*/
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: 1fr;
@@ -280,8 +250,9 @@ h2 {
 }
 
 .masterhead .games {
-	color: white;
-	font-size: 75px;
+	color: #D221A4;
+	font-size: 104px;
+	margin-left: -104px;
 	text-align: center;
 }
 
@@ -295,10 +266,10 @@ h2 {
 }*/
 
 .idiolect_logo img{
-	float: right;
+	margin-left: 350px;
 	text-align: center;
-	height:100px;
-	width:400px;
+	height:150px;
+	width:450px;
 
 }
 
@@ -318,11 +289,12 @@ h2 {
 
 .books_online .books {
 	background-color: #f4d94a;
-	height: 1045px;
+	height: 1275px;
 	width: 1025px;
 	padding-left: 30px;
 	padding-top: 10px;
 	margin-left: 127px;
+	border-radius: 25px;
 
 }
 
@@ -337,7 +309,7 @@ iframe {
 .masterhead {
 	font-family: 'Chicle', cursive;
 	background-color: #369647;
-	height: 740px;
+	height: 900px;
 	width: 80%;
 	border-right: 3px solid white;
 	border-left: 3px solid white;
@@ -346,6 +318,7 @@ iframe {
 	display: inline-block;
 	padding-right: 15px;
     padding-left: 100px;
+    border-radius: 25px;
 }
 
 
@@ -354,8 +327,8 @@ iframe {
 	padding:30px;
 	color: #333;
 	text-align: center;
-	
 }
+
 
 .picture img{
 	height: 200px;
@@ -492,19 +465,19 @@ nav {
 
 
 #books_online {
-	background-image: url("https://www.insidehighered.com/sites/default/server_files/styles/large/public/media/62354870_thumbnail.jpg?itok=dtZXMyvT:");
+	background-image: url("https://bennettfeely.com/gradients/img/gradient.jpg");
 }
 
 
 #book_previews {
-	text-align: center;
+	margin-left: 10%;
 }
 
 
 
  #parent_resources {
 	
-	background-image: url("https://www.insidehighered.com/sites/default/server_files/styles/large/public/media/62354870_thumbnail.jpg?itok=dtZXMyvT:");
+	background-image: url("https://bennettfeely.com/gradients/img/gradient.jpg");
 	font-family: 'Chicle', cursive;
 	font-size: 30px;
 	opacity: 0.9;
@@ -516,7 +489,11 @@ nav {
 
 
 
-
+#games_homepage p {
+	color: #D221A4;
+	font-size: 50px;
+	line-height: 50px;
+}
 
 
 
