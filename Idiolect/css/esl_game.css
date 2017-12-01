@@ -3,6 +3,7 @@
 
 html, body {
   height: 100%; 
+  background-image: url("https://www.insidehighered.com/sites/default/server_files/styles/large/public/media/62354870_thumbnail.jpg?itok=dtZXMyvT:");
 }
 
 
@@ -48,7 +49,7 @@ h1{
 
 
 body {
-  background: #F7B538;
+  background-image: url("https://www.insidehighered.com/sites/default/server_files/styles/large/public/media/62354870_thumbnail.jpg?itok=dtZXMyvT:");
   min-height: 100%;
   font-family: "Arial", sans-serif;
 

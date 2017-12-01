@@ -1,119 +1,157 @@
-*, *:before, *:after
-  box-sizing: border-box
-  margin: 0
-  padding: 0
+/*Below is the CSS for the puzzles*/
 
-html 
-  overflow: hidden
 
-body
-  background: linear-gradient(45deg, #8B7AAE, #A4447E)
-  height: 100vh
-  width: 100vw
-  padding-top: 1px
 
-h1
-  font-family: Play, sans-serif
-  text-align: center
-  margin-top: 19px
-  color: #fff
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
 
-.address
-  width: 524px
-  height: 25px
-  margin-top: 30px
-  margin-left: 50%
-  transform: translateX(-50%)
-  font-family: Play, sans-serif
-  
-  input
-    width: 450px
-    height: 100%
-    display: inline-block
-    border-radius: 2px
-    border: 1px solid #8B7AAE
-    outline: none!important
-    padding-left: 2px
-    &:focus 
-      border: 1px solid #A4447E
+body {
+    background-image: url("https://www.insidehighered.com/sites/default/server_files/styles/large/public/media/62354870_thumbnail.jpg?itok=dtZXMyvT:");
+    background-repeat: repeat;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin:10;    
+    font-size: 15px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-.puzzlify
-  display: inline-block
-  width: 70px
-  height: 100%
-  background: #2B1657
-  border-radius: 2px
-  cursor: pointer
-  position: relative
-  top: 1px
-  line-height: 25px
-  font-size: 1.1rem
-  text-align: center
-  color: #fff
-  &:hover
-    box-shadow: 0 0 5px #2B1657
+table {
+    font-size:20px;
+    margin: 5px auto;
+}
 
-.puzzle-wrapper
-  font-size: 0
-  width: 524px
-  margin-left: 50%
-  transform: translateX(-50%)
-  margin-top: 40px
-  position: relative   
-  
-.dz
-  width: 50px
-  height: 50px
-  float: left
-  border: 1px solid #fff
-  background: #ccc
-  opacity: .4
-  overflow: hidden
-  
-.indz
-  width: 250px
-  height: 250px
-  background-image: url("https://kiyutink.github.io/moscow/moscow1.jpg")
-  background-size: cover
-    
-.drop-zone
-  width: 250px
-  height: 250px
-  display: inline-block
-  margin-left: 24px
-  font-size: 1rem
-    
-.container
-  width: 250px
-  height: 250px
-  color: red
-  display: inline-block
-  
-.pic
-  width: 50px
-  height: 50px
-  float: left
-  overflow: hidden
-  border: 1px solid #fff
-  position: absolute
-  z-index: 0  
-  font-size: 1rem
-  
-.inner-pic
-  width: 250px
-  height: 250px
-  background-image: url("https://kiyutink.github.io/moscow/moscow1.jpg")
-  background-size: cover
-  cursor: grab
+input, button{
+    background-color: #000;
+    color: #FFF;
+    border:none;
+    font-size:13px;
+    padding: 1em;
+    margin: 1em;
+} 
 
-.grabbed
-  cursor: grabbing
-  
-@for $row from 1 through 5  
-  @for $col from 1 through 5
-    .inner-pic-#{$row}-#{$col}, .indz-#{$row}-#{$col}
-      background-position: (1 - $col) * 50px  (1 - $row) * 50px
-    .pic-#{$row}-#{$col}
-      left: ($col - 1)  * 50px
-      top: ($row - 1) * 50px
-    
+#clicks {
+   font-size: 50px;
+}
+
+.imagePart {
+    color: #292927;
+    border-style: solid;
+    border-width: 0.08em;
+    margin: -3px -2px;
+}
+
+
+
+
+
+/*
+
+
+./*active {
+     left: 0px;
+     font-family: 'Chicle', cursive;
+}
+
+
+
+ ul {
+    font-family: 'Chicle', cursive;
+    margin: 0;
+    padding: 20px 0;
+    font-size: 20px;
+
+ }
+
+ ul li {
+    font-family: 'Chicle', cursive;
+    list-style: none;
+
+ }
+
+ ul li a {
+    font-family: 'Chicle', cursive;
+    font-size: 30px;
+    float: right;
+    padding: 10px 10px;
+    color: #D56062; 
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0,0,0,.2);
+
+ }
+
+ .sidebarBtn {
+
+    position: absolute;
+    top: -28px;
+    left: 1;
+    padding-left: 60px;
+    width: 60px;
+    height: 50px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background: #f5f5f5;
+    border: none;
+    outline: none;
+ }
+
+ .sidebarBtn span {
+    display: block;
+    width: 35px;
+    height: 3px;
+    background: #262626;
+    position: absolute;
+    top: 24px;
+    transition:.3s;
+    padding-left: 4px;
+
+ }
+
+.sidebarBtn span:before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #262626;
+    transition: .3s;
+
+}
+
+
+.sidebarBtn span:after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #262626;
+    transition: .3s;
+}
+
+
+
+.sidebarBtn.toggle span {
+    background: transparent;
+
+}
+
+
+.sidebarBtn.toggle span:before {
+    top: 0;
+    transform: rotate(45deg);
+}
+
+.sidebarBtn.toggle span:after{
+    top: 0;
+    transform: rotate(-45deg);
+}
+*/
+
+
+
+
+
+

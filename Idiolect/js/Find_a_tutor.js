@@ -2,8 +2,11 @@
 
 const APIKey = "b02f47db-6c8f-4622-ab83-cb558e4b02f0";
 
+const myAxios = axios.create({
+	headers: {"crossdomain": true}
+});
 
-axios.get(`https://data.wyzant.com/feeds/downloadFeed?apiKey=b02f47db-6c8f-4622-ab83-cb558e4b02f0&feedFormat=JSON&maxResults=100`).then(function(response){
+myAxios.get(`https://data.wyzant.com/feeds/downloadFeed?apiKey=b02f47db-6c8f-4622-ab83-cb558e4b02f0&feedFormat=JSON&maxResults=100`).then(function(response){
   response.data.forEach(function(tutor){
     document.getElementById("main").innerHTML = `
         <div class="tutor">

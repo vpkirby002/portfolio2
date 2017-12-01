@@ -1,28 +1,43 @@
  #homepage {
 	
 	/*background-image: url(https://ww2.kqed.org/quest/wp-content/uploads/sites/39/2012/04/earth-day.jpeg);*/
-	font-family: 'Henny Penny', cursive;
-	background-color: #DB7C26;
+	font-family: 'Chicle', cursive;
+	background-image: url("https://www.insidehighered.com/sites/default/server_files/styles/large/public/media/62354870_thumbnail.jpg?itok=dtZXMyvT:");
 	opacity: 0.9;
 	position: fixed;
 	margin: 0;
 	padding: 0;
-	font-family: verdana;
+	
 	
 
 }
 
  #homepage h1 {
-	font-family: 'Henny Penny', cursive;
+	font-family: 'Chicle', cursive;
 	text-align: center;
 	color: white;
 }
 
 
+
+
+
+#homepage h2 {
+	font-size: 35px;
+	color: black;
+}
+
+
+
+
+p {
+	font-size: 25px;
+}
+
 /*slideshow pictures*/
 
 .numbertext {
-	font-family: 'Henny Penny', cursive;
+	font-family: 'Chicle', cursive;
 	text-align: center;
 	border-radius: 25px;
 	
@@ -35,45 +50,49 @@ img {
 
 
 
-.sidebar{ 
-	font-family: 'Henny Penny', cursive;
+.sidebar { 
+	font-family: 'Chicle', cursive;
 	position: fixed;
+	margin-top:0px;
 	top: 0;
-	left: -250px;
-	background:transparent;
+	left: -250px;*/
+	background: transparent;
 	width: 250px;
 	height: 100%;
 	transition: .3s;
-	opacity: 0.5;
+	opacity: 1;
 
  }
 
 
 .active {
-	left: 0px;
+	 left: 0px;
+	 font-family: 'Chicle', cursive;
 }
 
 
 
  ul {
- 	font-family: 'Henny Penny', cursive;
- 	margin: 0;
+ 	font-family: 'Chicle', cursive;
+ 	margin: 65px;
  	padding: 20px 0;
+ 	font-size: 20px;
 
  }
 
  ul li {
- 	font-family: 'Henny Penny', cursive;
+ 	font-family: 'Chicle', cursive;
  	list-style: none;
 
  }
 
  ul li a {
- 	font-family: 'Henny Penny', cursive;
- 	float: left;
- 	padding: 10px 20px;
- 	color: #D56062;
- 	display: inline-block;*/
+ 	font-family: 'Chicle', cursive;
+ 	font-size: 30px;
+ 	float: right;
+ 	padding: 10px 10px;
+ 	color: #fff; 
+ 	display: inline-block;
  	text-decoration: none;
  	border-bottom: 1px solid rgba(0,0,0,.2);
 
@@ -82,9 +101,10 @@ img {
  .sidebarBtn {
 
  	position: absolute;
- 	top: 0;
- 	right: -50px;
- 	width: 50px;
+ 	top: -28px;
+ 	left: 1;
+ 	padding-left: 60px;
+ 	width: 60px;
  	height: 50px;
  	box-sizing: border-box;
  	cursor: pointer;
@@ -100,7 +120,8 @@ img {
  	background: #262626;
  	position: absolute;
  	top: 24px;
- 	transition:  .3s;
+ 	transition:.3s;
+ 	padding-left: 4px;
 
  }
 
@@ -113,6 +134,7 @@ img {
 	height: 3px;
 	background: #262626;
 	transition: .3s;
+
 }
 
 
@@ -145,11 +167,12 @@ img {
 	transform: rotate(-45deg);
 }
 
-/*
+
 #google_translate {
+	background-image: url("https://www.insidehighered.com/sites/default/server_files/styles/large/public/media/62354870_thumbnail.jpg?itok=dtZXMyvT:");
 	margin: 0 auto;
 }
-*/
+
 
 
 /*CSS for background video*/
@@ -206,47 +229,60 @@ img {
 /*Below is the CSS for the parent resouces page*/	
 
 #mom_daughter img {
-	height: 400px;
-	width: 1200px;
+	height: 350px;
+	width: 1100px;
 	margin: 0 auto;
 	padding-left: 30px;
+	margin-left: 150px;
+
 }
 
 
 #mom_daughter h1{
-	font-family: verdana;
+	font-family: 'Chicle', cursive;;
 	font-size: 20px;
 	text-align: center;
+	margin-left: 150px;
+	/*margin-left: 50px;*/
 }
 
 /*Google translate CSS below*/
 
 #google_translate_element {
-	font-family: 'Henny Penny', cursive;
+	font-family: 'Chicle', cursive;
 	text-align: right;
 	padding-top: 10px;
 }
 
 
 h1 {
-	font-family: 'Henny Penny', cursive;
+	font-family: 'Chicle', cursive;
 	text-align: center;
 }
 
 h2 {
-	font-family: 'Henny Penny', cursive;
+	font-family: 'Chicle', cursive;
 	text-align: center;
+	font-size: 30px;
+	color: black;
+	line-height: 40px;
 }
 
 
 /*CSS for sections on homepage*/
 
 .site {
-	font-family: 'Henny Penny', cursive;
+	font-family: 'Chicle', cursive;
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: 1fr;
 
+}
+
+.masterhead .games {
+	color: white;
+	font-size: 75px;
+	text-align: center;
 }
 
 
@@ -258,8 +294,12 @@ h2 {
 	padding-bottom: 10px;
 }*/
 
-.idiolect_logo {
+.idiolect_logo img{
+	float: right;
 	text-align: center;
+	height:100px;
+	width:400px;
+
 }
 
 
@@ -274,23 +314,47 @@ h2 {
 	padding-bottom: 10px;
 }
 
+/*This is the CSS for the videos box*/
+
+.books_online .books {
+	background-color: #f4d94a;
+	height: 1045px;
+	width: 1025px;
+	padding-left: 30px;
+	padding-top: 10px;
+	margin-left: 127px;
+
+}
+
+
+iframe {
+	padding: 5px;
+}
+
+
+
+/*this is the end of the CSS for videos*/
 .masterhead {
-	font-family: 'Henny Penny', cursive;
-	background-color: yellow;
-	height: 700px;
-	width: 50%;
+	font-family: 'Chicle', cursive;
+	background-color: #369647;
+	height: 740px;
+	width: 80%;
 	border-right: 3px solid white;
 	border-left: 3px solid white;
 	margin: 0px auto;
+	text-align: center;
+	display: inline-block;
+	padding-right: 15px;
+    padding-left: 100px;
 }
 
 
 .text {
-	font-family: 'Henny Penny', cursive;
+	font-family: 'Chicle', cursive;
 	padding:30px;
 	color: #333;
 	text-align: center;
-	font-family: Gotham;
+	
 }
 
 .picture img{
@@ -298,7 +362,7 @@ h2 {
 	width: 200px;
 	-webkit-transition: all 1s ease;
 	overflow: hidden;
-	border: 5px solid #FAFF70;
+	border: 5px solid #FFEC5C;
 }
 
 
@@ -361,36 +425,38 @@ h2 {
 
 
 #translator input {
+	margin-left: 250px;
 	height: 300px;
 	width: 700px;
-	font-family: 'Henny Penny', cursive;
+	font-family: 'Chicle', cursive;
 	text-align: center;
 }
 
 input {
-	font-size: 80px;
-	font-family: 'Henny Penny', cursive;
+	font-size: 100px;
+	font-family: 'Chicle', cursive;
 	text-align: center;
 
 }
 
 button {
-	background-color: #4CAF50;
-	font-family: 'Henny Penny', cursive;
+	/*background-color: #4CAF50;*/
+	font-family: 'Chicle', cursive;*/
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 25px 35px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 40px 20px;
+    margin: 209px 193px;
     cursor: pointer;
 }
 
 #test {
-	font-family: 'Henny Penny', cursive;
+	font-family: 'Chicle', cursive;
 	font-size: 100px;
+	text-align: center;
 
 }
 
@@ -413,11 +479,58 @@ button {
 #translation_navbar ul {
 	overflow: hidden;
 	display: inline-block;
+	font-size: 20px;
+	font-family: 'Chicle', cursive;
+
 }
 
 
 nav {
 	color: blue;
 }
+
+
+
+#books_online {
+	background-image: url("https://www.insidehighered.com/sites/default/server_files/styles/large/public/media/62354870_thumbnail.jpg?itok=dtZXMyvT:");
+}
+
+
+#book_previews {
+	text-align: center;
+}
+
+
+
+ #parent_resources {
+	
+	background-image: url("https://www.insidehighered.com/sites/default/server_files/styles/large/public/media/62354870_thumbnail.jpg?itok=dtZXMyvT:");
+	font-family: 'Chicle', cursive;
+	font-size: 30px;
+	opacity: 0.9;
+	/*position: fixed;*/
+	margin: 0 auto;
+	padding: 5px 5px 5px 5px;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
