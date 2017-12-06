@@ -1,0 +1,42 @@
+<div class="feedstream">
+  <div class="row1">
+    <div class="three">
+      <!-- Renderin from database with this loop  -->
+      <% @sources.each do |source| %>
+      <div class="feed">
+        <div class="feed-header">
+          <a class="feed-author-name"><%=source.title %></a>
+          <a class="feed-time"><%= source.created_at %></a>
+        </div>
+        <div class="feed-image">
+          <a href="<%= source.link %>">
+          <img id="feed_pic" src="<%=source.image%>"/></a>
+        </div>
+        <div class="feed-body"><%= source.text %></div>
+        <!-- maybe here -->
+
+        <!-- Input comments -->
+        <div class="commentinput">
+          <form action="/addcomment" method="post" name="/comments">
+            <input type="text" id="comment" name="comment" placeholder="Add a comment...">
+            <input id="button2" type="submit" name="post" value="Post">
+          </form>
+        </div>
+        <!--Input comments  close div -->
+        <div class="feed-footer">
+          <% @comment.each do |comment| %>
+          <div class="commentdiv">
+            <div class="comments" style="width:100%"><br>
+              <span>
+                <i class="fa fa-heart-o nx"></i>
+              </span><%= comment.comment %><br>
+            </div><br>
+          </div>
+          <% end %>
+        </div>
+      </div>
+      <% end %>
+      <!-- put end here maybe -->
+    </div>
+  </div>
+</div>

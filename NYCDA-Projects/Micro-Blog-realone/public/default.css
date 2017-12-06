@@ -1,0 +1,429 @@
+/*FEED CSS*/
+body {
+  background: #F9F8F8;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#editprofile{
+  color: black
+
+}
+
+/*FLASH MESSAGE*/
+#notice {
+  text-align: center;
+	background-color: rgba(30,30,200,0.8);
+	color: #fff;
+	font-weight: bold;
+	padding: 15px 50px;
+}
+/*END FALSH MESSAGE*/
+
+/*=================Navigation===================*/
+/*Navigation===================*/
+.sidebar {
+  background: #8B3296;
+  flex: 1 3 20%;
+  min-width: 300px;
+  padding: 0em;
+}
+.logo {
+  text-transform: uppercase;
+  margin-bottom: 2em;
+  color: DarkGrey;
+  @media (min-width: 1500px) {
+    margin-bottom: 5em;
+  }
+  span {
+    font-weight: 700;
+  }
+}
+.nav-item {
+  color: DarkGrey;
+  text-decoration: none;
+  font-size: 1.7rem;
+  display: inline-block;
+  margin-right: 2em;
+  @media (min-width: 1500px) {
+    display: block;
+    margin: 5vh 0;
+  }
+  &.active {
+    color: #F9F8F8;
+  }
+}
+.nav-item-special {
+  color: DarkGrey;
+  text-decoration: none;
+  font-size: 1.7rem;
+  float: right;
+
+}
+/*Navigation End*/
+/*==========Navigation End=============*/
+
+/*============LOGIN CSS===============*/
+#login_bg {
+  margin: 0 auto;
+  background-image: url("https://www.thirdwavedigital.com/img/web/coding-and-programming.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.login-container{
+    width: 500px;
+    height: 400px;
+    text-align: center;
+    background-color: rgba(52, 73, 94,0.6);
+    border-radius: 4px;
+    margin: 0 auto;
+    margin-top: 70px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.login-container img{
+    width: 120px;
+    height: 140px;
+    margin-top: -60px;
+    margin-bottom: 30px;
+    border-radius: 50%;
+}
+.login-container input[type="text"], .login-container input[type="password"]{
+    height: 55px;
+    width: 200px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding-top: 0px;
+    padding-left: 30px;
+    text-align: center;
+}
+.login-form-input::before{
+    content: "\f007";
+    position: absolute;
+    font-family: "FontAwesome";
+  padding-left: 30px;
+    color: black;
+    padding-top: 9px;
+    font-size: 30px;
+}
+.login-form-input:nth-child(2)::before{
+    content: "\f023";
+}
+.btn-login{
+    padding: 15px, 30px;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 40px;
+    border: none;
+    background-color: #2ECC71;
+    height: 60px;
+    width: 100px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+a {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+#login-social-media-icons {
+ margin: auto;
+ width: 15%;
+ text-align: center;
+ }
+/*Zip Code Header is #login-h1*/
+#login-h1{
+  text-transform: uppercase;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    color: white;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    top: 0;
+}
+/* Login-h2 is blurb about everything the sight encompasses*/
+.login-h2{
+  color: Ivory;
+    padding-top: -10px;
+    padding-bottom: -10px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+
+}
+/* place old css for feed page below this point*/
+
+.feedstream .row1 .three {
+  background-image: url("https://warroom.securestate.com/wp-content/uploads/2016/10/coding.jpg");
+  margin-top: -5px;
+  margin: 0 auto;
+  background-repeat: repeat;
+  background-size: 100%;
+}
+
+.feedstream{
+  margin: auto;
+  max-width: 100%;
+}
+.feeds {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  justify-content: center;
+}
+
+.feed-image {
+  margin: auto;
+}
+ #feed_pic{
+   margin: auto;
+   width: 320px;
+   height: 312px;
+   margin-left: 16%;
+ }
+.feed {
+  border-radius: 3px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 1px solid #efefef;
+  width: 500px;
+  margin: auto;
+  margin-top: 20px;
+  align-self: center;
+  flex-basis: 450px;
+}
+.feed-header {
+  display: flex;
+  padding: 1em;
+  align-items: baseline;
+
+}
+.feed-author-name {
+  color: black;
+  flex-grow: 1;
+  margin: .5em;
+  text-decoration: none;
+  }
+.feed-time {
+  color: black;
+  text-decoration: none;
+}
+.feed-body {
+  padding: 1.5em;
+  white-space: normal;
+}
+.feed-footer {
+  display: flex;
+  border-top: 1px solid #eee;
+  margin: 0 1.5em 0 1.5em ;
+  padding: 1em 0 1em 0;
+  align-items: center;
+}
+
+.commentdiv{
+  max-width: 100%;
+  display: block;
+}
+
+#comment {
+  /* input box */
+  border: 0px;
+  outline: none;
+  font-family: 'Lato', san-serif;
+  margin: .5em;
+  flex-grow: 1;
+  font-size: 14px;
+  padding-left: 20px;
+  display: block;
+}
+
+#button2 {
+  float: right;
+  margin-right: 27px;
+}
+
+.nx, .nz, .mx {
+  color: #ddd;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+.nz {
+  align-self: flex-start;
+  margin-top: 0.2em;
+}
+.mx {
+  color: red;
+}
+.feed-author-img {
+  img {
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+  }
+}
+
+
+/*place old feed css above this point*/
+/*-=============SIGN UP CSS-=========================-*/
+.createaccount{
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  width: 45%;
+  height: 450px;
+  padding: 10px;
+  text-align: center;
+  background:white;
+  opacity: .75;
+  border-radius: 10px;
+  list-style-type: none;
+}
+ h3 {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-top: -40px;
+  color: white;
+  font-size: 3em;
+  text-align: center;
+}
+.createaccount label{
+ list-style-type: none;
+  text-align: left;
+  font-size: 1.5em;
+  padding: 5px;
+}
+.createaccount input{
+  width: 30%;
+  height: 10px;
+  padding: 10px;
+  box-shadow: 0 0 5px 5px #888;
+  background: #fff;
+  margin: 10px;
+}
+.createaccount #button{
+  border-radius: 10px;
+  font-size: 10px;
+  background: #F7F7F2;
+  margin: 5px;
+  font-size: 1.2em;
+  height: 40px;
+}
+.signup_bg{
+  height:600px;
+}
+#signup_bg1 .signup_bg {
+  margin: 0 auto;
+  margin-bottom: 0;
+  background-image: url("https://www.mindmeister.com/blog/wp-content/uploads/2014/11/creativity_fb_post_final.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  height: 600px;
+}
+/*==========Profile CSS==================*/
+#profile_title {
+	color: black;
+  font-family: 'Montserrat', sans-serif;
+	font-size: 25px;
+	text-align: center;
+}
+#page2 {
+	margin: 0 auto;
+	background-repeat: repeat;
+	background-size: 100%;
+}
+#page2 .profile_display{
+  margin-right: 35px;
+}
+#page2 .profile_display img {
+	float:right;
+	border-radius: 50%;
+	height:300px;
+	width: 300px;
+  margin-right:30px,
+}
+#username1 {
+	color:black;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 30px;
+	float: right;
+	margin-bottom: 30px;
+	margin-right: 50px;
+  clear: both;
+
+}
+
+#delete_button{
+  float: right;
+  margin-top: 25%;
+  border-radius: 10px;
+  height: 40px;
+  background-color: red;
+  font-size: 20px;
+  box-shadow: 10px 10px 5px #888888;
+}
+
+#page2 input[type="text"], input[type="topic"], input[type="url"], input[type="description"], input[type="file"] {
+	height: 32px;
+	width: 350px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	border: none;
+	margin-bottom: 10px;
+	background-color: #fff;
+	padding-top: 0px;
+	padding-left: 10px;
+	text-align: left;
+  margin-top: 30px;
+}
+#page2 .profile-form-input {
+	width: 546px;
+	height: 430px;
+	text-align: center;
+	background-color: rgba(52, 73, 94,0.7);
+	border-radius: 40px;
+	margin-left: 10%;
+	margin-top: 50px;
+  margin-bottom: 30px;
+	padding: 20px;
+  padding-top: 30px;
+
+}
+#page2 .publish {
+	padding: 45px, 40px;
+	cursor: pointer;
+	color: #fff;
+	border-radius: 40px;
+	border: none;
+	background-color: #2ECC71;
+	height: 40px;
+	width: 120px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 25px;
+	margin-bottom: 15px;
+	text-align: center;
+}
+/*END PROFILE CSS*/
+
+
+/*Bottom*/
+.last {
+  height: 73px;
+  background-color: #031926;
+}
+footer {
+  height: 100px;
+  background-color: white;
+  text-align: center;
+}
+#footer_text {
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
