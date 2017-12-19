@@ -203,6 +203,19 @@ section#about.sec-about {
   text-align: center;
 }
 
+.row2 {
+  text-align: center;
+}
+
+ .col-md-5 .hobbies2-block {
+  height: 450px;
+  width: 400px;
+  // position:relative;
+  display: inline;
+  float:right;
+  padding:10px;
+}
+
 /*Services*/
 
 .sec-services {
@@ -227,10 +240,15 @@ section#about.sec-about {
   margin: 1em 0;
 }
 
-/*Testimonials*/
+/*Hobbies section*/
 
 .sec-testimonials {
   background: #f9f9f9;
+}
+
+.col-md-4 .hobbies-block {
+  height: 450px;
+  width: 400px;
 }
 
 /*Contact*/
@@ -282,4 +300,16 @@ footer {
   &:focus {
     color: $red;
   }
+
+
+
+// css code for hamurger menu taken from codepen 
+
+
+
+
+
+
+
+
 }

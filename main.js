@@ -6,3 +6,7 @@ $(function() {
     }, 750);
   });
 });
+
+
+// Code taken from codepen for hamburger menu below
+
