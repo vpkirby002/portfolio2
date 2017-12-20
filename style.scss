@@ -25,13 +25,16 @@ body {
 
 .navbar a {
   font-size: 16px;
-  display: inline-block;
+ 
 }
 
 
 .navbar .fa-external-link {
   font-size: 10px;
 }
+
+
+
 
 .main-heading {
   color: #A0A0A0;
@@ -136,7 +139,7 @@ hr {
 }
 
 .navbar .fa-external-link {
-  horizontal-align: top;
+  vertical-align: top;
 }
 
 .navbar-default .navbar-nav>li>a:hover,
@@ -147,7 +150,6 @@ hr {
 .navbar-default .navbar-nav>li>a:active {
   color: darken($red, 5%);
 }
-
 /*Main*/
 
 .sec-main {
@@ -303,13 +305,10 @@ footer {
 
 
 
+
 // css code for hamurger menu taken from codepen 
 
 
 
 
 
-
-
-
-}

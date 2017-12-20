@@ -1,3 +1,6 @@
+
+
+// Code taken from codepen for hamburger menu below
 $(function() {
   $('.js-nav a, .js-connect').click(function(e) {
     e.preventDefault();
@@ -6,7 +9,4 @@ $(function() {
     }, 750);
   });
 });
-
-
-// Code taken from codepen for hamburger menu below
 
