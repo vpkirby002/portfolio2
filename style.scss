@@ -48,6 +48,32 @@ body {
 
 }
 
+
+
+.navbar.navbar-default.navbar-fixed-top {
+  
+  display: inline-block;
+  list-style-type: none;
+  top: 0;
+  // margin: 50px;
+  // padding-bottom: 10px;
+  position: fixed;
+  overflow: hidden;
+
+}
+
+.navbar.navbar-default.navbar-fixed-top a {
+  
+  font-size: 30px;
+  color: #A0A0A0;
+  margin-bottom: 10;
+  text-align: center;
+}
+
+.container{
+  font-size: 50px;
+}
+
 .container > h1 {
   font-weight: 300;
   text-align: center;
@@ -157,6 +183,7 @@ hr {
   height: 560px;
   background: url(https://static.pexels.com/photos/205316/pexels-photo-205316.png) no-repeat center center;
   background-size: cover;
+  padding: 100px;
 
   &:after {
     content: "";
@@ -205,18 +232,32 @@ section#about.sec-about {
   text-align: center;
 }
 
-.row2 {
+#container .row2 {
   text-align: center;
 }
 
  .col-md-5 .hobbies2-block {
   height: 450px;
   width: 400px;
-  // position:relative;
+  position:relative;
   display: inline;
-  float:right;
+  
   padding:10px;
 }
+
+
+.col-md-5 .hobbies-block {
+  height: 450px;
+  width: 400px;
+}
+
+
+img.hobbies2-block {
+  text-align: center;
+  height: 450px;
+  width: 400px;
+}
+
 
 /*Services*/
 
