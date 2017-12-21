@@ -78,6 +78,8 @@ body {
   font-weight: 300;
   text-align: center;
   text-transform: uppercase;
+  padding-top: 50px;
+  padding-bottom: 15px;
 }
 
 p {
@@ -120,7 +122,7 @@ p#hello {
 /*=Base=*/
 
 section {
-  padding: 5em 0;
+  // padding: 5em 0;
 }
 
 footer {
@@ -180,7 +182,7 @@ hr {
 
 .sec-main {
   position: relative;
-  height: 560px;
+  height: 650px;
   background: url(https://static.pexels.com/photos/205316/pexels-photo-205316.png) no-repeat center center;
   background-size: cover;
   padding: 100px;
