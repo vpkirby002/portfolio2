@@ -262,11 +262,26 @@ img.hobbies2-block {
 
 .sec-testimonials {
   background: #f9f9f9;
+  margin: -48px;
+  margin-left: 0px;
+  margin-right: 84px;
+
 }
 
 .col-md-4 .hobbies-block {
   height: 450px;
   width: 400px;
+}
+
+img .hobbies-block {
+  margin-left: 0px;
+  padding-top: 10px;
+}
+
+.col-md-4{
+
+  font-size: 30px;
+  display: inline-block;
 }
 
 /*Contact*/
