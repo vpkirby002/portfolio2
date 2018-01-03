@@ -97,7 +97,8 @@ p#hello {
   text-transform: uppercase;
 }
 
-.soc-media-ul a {
+.soc-media-ul  {
+  color: white;
   text-align: center;
   text-decoration: none;
 }
