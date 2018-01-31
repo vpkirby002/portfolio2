@@ -68,7 +68,7 @@ body {
 }
 
 p {
-  font-size: 30px;
+  font-size: 25px;
   line-height: 1.5;
   padding-left: 5px;
 }
@@ -138,10 +138,12 @@ hr {
 
 .sec-folio .row {
   margin-bottom: 3em;
+  
 }
 
 .sec-folio img {
-  max-width: 100%;
+  max-width: 224px;
+  margin-left: 100px;
 }
 
 /*Header*/
