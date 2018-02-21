@@ -4,7 +4,7 @@
 	font-family: 'Chicle', cursive;
 	background-image: url("https://bennettfeely.com/gradients/img/gradient.jpg");
 	opacity: 0.9;
-	position: fixed;
+	position: relative;
 	margin: 0;
 	padding: 0;
 	
