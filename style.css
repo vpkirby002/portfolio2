@@ -136,10 +136,32 @@ hr {
 
 /*=Layout=*/
 
+#projects-label h1 {
+  text-align: center;
+}
+section#folio .sec-folio {
+  margin: 0 auto;
+}
+
+#project-names p {
+  text-align: center;
+}
+
+/*section#folio .sec-folio h1 {
+  margin: 0 auto;
+  padding-left: 50px;
+}
+*/
+
+
+
+
 .sec-folio .row {
   margin-bottom: 3em;
   
 }
+
+
 
 .sec-folio img {
   max-width: 224px;
